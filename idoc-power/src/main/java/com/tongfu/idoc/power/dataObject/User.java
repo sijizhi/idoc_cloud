@@ -1,4 +1,4 @@
-package com.tongfu.idoc.auth.dataObject;
+package com.tongfu.idoc.power.dataObject;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -14,7 +14,7 @@ public class User {
     @JsonIgnore
     private String passWord;//密码
     private String userName;//姓名
-    //  区分用户以什么方式登陆
+//  区分用户以什么方式登陆
     private  String loginType ;
 
     public User() {

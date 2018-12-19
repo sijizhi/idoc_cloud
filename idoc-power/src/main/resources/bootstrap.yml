@@ -1,6 +1,6 @@
 spring:
   application:
-    name: idoc-auth
+    name: idoc-power
   redis:
     #host: 127.0.0.1
     port: 6379
@@ -21,13 +21,13 @@ eureka:
     service-url:
       defaultZone: http://idoc:idoc@localhost:8761/eureka/
 server:
-  port: 8002
+  port: 8003
 
 
 
 logging:
   home: "logs"
-  name: "idoc-auth"
+  name: "idoc-power"
   level:
     root: "info"
     org.springframework: "info"
