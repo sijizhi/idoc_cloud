@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: idoc-auth
+  redis:
+    #host: 127.0.0.1
+    port: 6379
+    host: 47.100.115.31
+  datasource:
+    url: jdbc:oracle:thin:@47.92.146.232:1588/UATDB
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    username: dev_zsj
+    password: oracle
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.tongfu.idoc.auth.dataObject
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://idoc:idoc@localhost:8761/eureka/
+server:
+  port: 8002
+
+
+
+logging:
+  home: "logs"
+  name: "idoc-auth"
+  level:
+    root: "info"
+    org.springframework: "info"
+
